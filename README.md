@@ -85,7 +85,7 @@ These rules enforce:
 
 ## Project Structure
 
-```
+```text
 eslint-config/
 ├ base/
 │  └ index.js
