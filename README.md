@@ -11,7 +11,7 @@ This package provides a **framework-agnostic base configuration** that enforces 
 Install the config and required peer dependencies.
 
 ```bash
-pnpm add -D eslint @genesis/eslint-config @eslint/js typescript-eslint eslint-plugin-import eslint-plugin-unicorn eslint-plugin-sonarjs eslint-plugin-simple-import-sort eslint-config-prettier
+pnpm add -D eslint github:genesisfounders/eslint-config @eslint/js typescript-eslint eslint-plugin-import eslint-plugin-unicorn eslint-plugin-sonarjs eslint-plugin-simple-import-sort eslint-config-prettier
 ```
 
 ---
@@ -21,7 +21,7 @@ pnpm add -D eslint @genesis/eslint-config @eslint/js typescript-eslint eslint-pl
 Create an `eslint.config.js` file in your project.
 
 ```js
-import base from "@genesis/eslint-config/base";
+import base from "github:genesisfounders/eslint-config/base";
 
 export default [
   ...base
@@ -50,8 +50,8 @@ pnpm add -D eslint-plugin-react eslint-plugin-react-hooks
 Then extend your config:
 
 ```js
-import base from "@genesis/eslint-config/base";
-import react from "@genesis/eslint-config/react";
+import base from "github:genesisfounders/eslint-config/base";
+import react from "github:genesisfounders/eslint-config/react";
 
 export default [
   ...base,
